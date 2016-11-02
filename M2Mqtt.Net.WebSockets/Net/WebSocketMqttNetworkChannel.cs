@@ -22,7 +22,7 @@ namespace uPLibrary.Networking.M2Mqtt
     /// </summary>
     /// <example>
     /// 
-    /// var channel = new WebSocketMqttNetworkChannel("127.0.0.1", 80, false);
+    /// var channel = new WebSocketMqttNetworkChannel("ws://127.0.0.1:80/mqtt");
     ///
     /// this.MqttClient = new MqttClient("127.0.0.1", 80, false, 
     ///                MqttSslProtocols.None, ValidateServerCertificate,
@@ -36,21 +36,22 @@ namespace uPLibrary.Networking.M2Mqtt
         private WebSocket _webSocket;
         private MemoryStream _stream;
         private string _serverUri;
-        private string _subProtocol = "mqttv3.1";
-        private int _connectTimeoutMilliseconds = 10000;
-        private int _receiveTimeoutMilliseconds = 30000;
+        private string _subProtocol;
+        private int _connectTimeoutMilliseconds;
+        private int _receiveTimeoutMilliseconds;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="WebSocketMqttNetworkChannel" /> class.
         /// </summary>
-        /// <param name="remoteHostName">Name of the remote host.</param>
-        /// <param name="remotePort">The remote port.</param>
-        /// <param name="secure">if set to <c>true</c> secure.</param>
+        /// <param name="serverUri">The server URI.</param>
+        /// <param name="subProtocol">The sub protocol.</param>
         /// <param name="connectTimeoutMilliseconds">The connect timeout in milliseconds.</param>
         /// <param name="receiveTimeoutMilliseconds">The receive timeout in milliseconds.</param>
-        public WebSocketMqttNetworkChannel(string remoteHostName, int remotePort, bool secure, int connectTimeoutMilliseconds = 10000, int receiveTimeoutMilliseconds = 30000)
+        public WebSocketMqttNetworkChannel(string serverUri, string subProtocol = "mqttv3.1",
+            int connectTimeoutMilliseconds = 10000, int receiveTimeoutMilliseconds = 30000)
         {
-            _serverUri = string.Format("{0}://{1}:{2}/mqtt", (secure ? "wss" : "ws"), remoteHostName, remotePort);
+            _serverUri = serverUri;
+            _subProtocol = subProtocol;
             _connectTimeoutMilliseconds = connectTimeoutMilliseconds;
             _receiveTimeoutMilliseconds = receiveTimeoutMilliseconds;
         }
@@ -161,6 +162,11 @@ namespace uPLibrary.Networking.M2Mqtt
             {
                 Thread.Sleep(10);
                 elapsed += 10;
+            }
+
+            if (_webSocket.State != WebSocketState.Open)
+            {
+                throw new Exception("Opening WebSocket timed out.");
             }
         }
 
