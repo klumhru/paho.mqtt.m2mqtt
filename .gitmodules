@@ -1,0 +1,3 @@
+[submodule "WebSocket4Net1"]
+	path = WebSocket4Net1
+	url = git@github.com:lorenh/WebSocket4Net.git
