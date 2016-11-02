@@ -1,4 +1,0 @@
-[submodule "WebSocket4Net"]
-	path = WebSocket4Net
-	url = https://github.com/lorenh/WebSocket4Net.git
-	branch = 0.14.1
