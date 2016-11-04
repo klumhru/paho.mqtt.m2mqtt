@@ -104,3 +104,18 @@ client.Publish("/home/temperature", Encoding.UTF8.GetBytes(strValue), MqttMsgBas
  
 ...
 ```
+
+Following is an example of using the WebSockets channel
+```
+...
+
+var channel = new WebSocketMqttNetworkChannel("ws://127.0.0.1:80/mqtt");
+
+var mqttClient = new MqttClient("127.0.0.1", 80, false, 
+                MqttSslProtocols.None, ValidateServerCertificate,
+                SelectLocalCertificate, channel);
+
+mqttClient.Connect(clientId, userName, password, true, 60);
+
+...
+```
