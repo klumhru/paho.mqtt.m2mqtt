@@ -205,6 +205,9 @@ namespace uPLibrary.Networking.M2Mqtt
         private void OnDataReceived(object sender, DataReceivedEventArgs e)
         {
             Trace.WriteLine(TraceLevel.Verbose, "WebSocket DataReceived {0} bytes", e.Data.Length);
+            while(DataAvailable) {
+                Thread.Sleep(0);
+            }
             _stream = new MemoryStream(e.Data);
         }
 
