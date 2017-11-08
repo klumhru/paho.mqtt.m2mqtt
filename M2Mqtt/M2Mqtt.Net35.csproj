@@ -28,7 +28,7 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>..\bin\Release\M2Mqtt.Net</OutputPath>
-    <DefineConstants>TRACE;SSL</DefineConstants>
+    <DefineConstants>TRACE;SSL,NET_35</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
@@ -73,7 +73,6 @@
     <Compile Include="Messages\MqttMsgUnsubscribe.cs" />
     <Compile Include="Messages\MqttMsgUnsubscribedEventArgs.cs" />
     <Compile Include="Messages\MqttMsgUnsubscribeEventArgs.cs" />
-    <Compile Include="Mqtt35Settings.cs" />
     <Compile Include="MqttClient.cs" />
     <Compile Include="MqttSecurity.cs" />
     <Compile Include="Net\Fx.cs" />

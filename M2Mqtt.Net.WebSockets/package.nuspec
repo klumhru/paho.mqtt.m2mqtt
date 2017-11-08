@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <!--*-->
+    <id>M2Mqtt.Net35.WebSockets</id>
+    <!--*-->
+    <version>4.3.0.0</version>
+    <title>
+    </title>
+    <!--*-->
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <!--
+    <licenseUrl></licenseUrl>
+    <projectUrl></projectUrl>
+    <iconUrl></iconUrl>
+-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--*-->
+    <description>$description$</description>
+    <!--*-->
+    <releaseNotes>Added&amp;#x0020;Net3.5&amp;#x0020;support&amp;#x0020;with&amp;#x0020;Websockets</releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags>
+    </tags>
+    <dependencies>
+   <group targetFramework="net35">
+      <dependency id="SuperSocket.ClientEngine.Core" version="0.8.0.13" />
+      <dependency id="WebSocket4Net" version="0.15.0" />
+   </group>
+</dependencies>
+  </metadata>
+  <files>
+    <file src="..\bin\Release\M2Mqtt.Net35\M2Mqtt.Net*.*" target="lib\net35" />
+  </files>
+</package>

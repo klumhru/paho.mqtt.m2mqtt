@@ -16,10 +16,10 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("M2Mqtt.Net.WebSockets")]
-[assembly: AssemblyDescription("MQTT WebSockets Client Library for M2M communication")]
+[assembly: AssemblyTitle("M2Mqtt.Net35.WebSockets")]
+[assembly: AssemblyDescription("MQTT WebSockets Client Library for M2M communication on Net 3.5")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Cityzenith")]
 [assembly: AssemblyProduct("M2Mqtt")]
 [assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
