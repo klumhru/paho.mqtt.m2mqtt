@@ -4,7 +4,7 @@
     <!--*-->
     <id>M2Mqtt.Net35.WebSockets</id>
     <!--*-->
-    <version>4.3.0.0</version>
+    <version>4.3.2.1</version>
     <title>
     </title>
     <!--*-->
@@ -19,7 +19,7 @@
     <!--*-->
     <description>$description$</description>
     <!--*-->
-    <releaseNotes>Added&amp;#x0020;Net3.5&amp;#x0020;support&amp;#x0020;with&amp;#x0020;Websockets</releaseNotes>
+    <releaseNotes>Allow&amp;#x0020;Untrusted&amp;#x0020;connections&amp;#x0020;on&amp;#x0020;ssl&amp;#x0020;websockets&amp;#x0020;at&amp;#x0020;user's&amp;#x0020;risk</releaseNotes>
     <copyright>$copyright$</copyright>
     <tags>
     </tags>

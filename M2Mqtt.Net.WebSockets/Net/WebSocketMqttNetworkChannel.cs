@@ -39,6 +39,7 @@ namespace uPLibrary.Networking.M2Mqtt
         private string _subProtocol;
         private int _connectTimeoutMilliseconds;
         private int _receiveTimeoutMilliseconds;
+        private bool _allowUntrusted;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="WebSocketMqttNetworkChannel" /> class.
@@ -47,13 +48,15 @@ namespace uPLibrary.Networking.M2Mqtt
         /// <param name="subProtocol">The sub protocol.</param>
         /// <param name="connectTimeoutMilliseconds">The connect timeout in milliseconds.</param>
         /// <param name="receiveTimeoutMilliseconds">The receive timeout in milliseconds.</param>
+        /// <param name="allowUntrusted">Allow untrusted certificates for ssl connections</param>
         public WebSocketMqttNetworkChannel(string serverUri, string subProtocol = "mqttv3.1",
-            int connectTimeoutMilliseconds = 10000, int receiveTimeoutMilliseconds = 30000)
+            int connectTimeoutMilliseconds = 10000, int receiveTimeoutMilliseconds = 30000, bool allowUntrusted = false)
         {
             _serverUri = serverUri;
             _subProtocol = subProtocol;
             _connectTimeoutMilliseconds = connectTimeoutMilliseconds;
             _receiveTimeoutMilliseconds = receiveTimeoutMilliseconds;
+            _allowUntrusted = allowUntrusted;
         }
 
         /// <summary>
@@ -146,6 +149,13 @@ namespace uPLibrary.Networking.M2Mqtt
         public void Connect()
         {
             _webSocket = new WebSocket(_serverUri, _subProtocol);
+
+            // Use this at your own risk if your ssl connections are too strict
+            if (_allowUntrusted)
+            {
+                _webSocket.AllowUnstrustedCertificate = true;
+                _webSocket.Security.AllowNameMismatchCertificate = true;
+            }
 
             _webSocket.Opened += new EventHandler(OnOpened);
             _webSocket.DataReceived += new EventHandler<DataReceivedEventArgs>(OnDataReceived);
