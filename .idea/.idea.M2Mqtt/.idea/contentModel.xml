@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/.Rider2018.1/system/resharper-host/local/Transient/ReSharperHost/v12/SolutionCaches/_M2Mqtt.-2106263873.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="M2Mqtt" t="IncludeRecursive">
+        <e p="Exceptions" t="Include">
+          <e p="MqttClientException.cs" t="Include" />
+          <e p="MqttCommunicationException.cs" t="Include" />
+          <e p="MqttConnectionException.cs" t="Include" />
+          <e p="MqttTimeoutException.cs" t="Include" />
+        </e>
+        <e p="IMqttNetworkChannel.cs" t="Include" />
+        <e p="Internal" t="Include">
+          <e p="InternalEvent.cs" t="Include" />
+          <e p="MsgInternalEvent.cs" t="Include" />
+          <e p="MsgPublishedInternalEvent.cs" t="Include" />
+        </e>
+        <e p="M2Mqtt.Net.csproj" t="IncludeRecursive" />
+        <e p="Messages" t="Include">
+          <e p="MqttMsgBase.cs" t="Include" />
+          <e p="MqttMsgConnack.cs" t="Include" />
+          <e p="MqttMsgConnect.cs" t="Include" />
+          <e p="MqttMsgConnectEventArgs.cs" t="Include" />
+          <e p="MqttMsgContext.cs" t="Include" />
+          <e p="MqttMsgDisconnect.cs" t="Include" />
+          <e p="MqttMsgPingReq.cs" t="Include" />
+          <e p="MqttMsgPingResp.cs" t="Include" />
+          <e p="MqttMsgPuback.cs" t="Include" />
+          <e p="MqttMsgPubcomp.cs" t="Include" />
+          <e p="MqttMsgPublish.cs" t="Include" />
+          <e p="MqttMsgPublishEventArgs.cs" t="Include" />
+          <e p="MqttMsgPublishedEventArgs.cs" t="Include" />
+          <e p="MqttMsgPubrec.cs" t="Include" />
+          <e p="MqttMsgPubrel.cs" t="Include" />
+          <e p="MqttMsgSuback.cs" t="Include" />
+          <e p="MqttMsgSubscribe.cs" t="Include" />
+          <e p="MqttMsgSubscribeEventArgs.cs" t="Include" />
+          <e p="MqttMsgSubscribedEventArgs.cs" t="Include" />
+          <e p="MqttMsgUnsuback.cs" t="Include" />
+          <e p="MqttMsgUnsubscribe.cs" t="Include" />
+          <e p="MqttMsgUnsubscribeEventArgs.cs" t="Include" />
+          <e p="MqttMsgUnsubscribedEventArgs.cs" t="Include" />
+        </e>
+        <e p="MqttClient.cs" t="Include" />
+        <e p="MqttSecurity.cs" t="Include" />
+        <e p="MqttSettings.cs" t="Include" />
+        <e p="Net" t="Include">
+          <e p="Fx.cs" t="Include" />
+          <e p="MqttNetworkChannel.cs" t="Include" />
+        </e>
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Session" t="Include">
+          <e p="MqttBrokerSession.cs" t="Include" />
+          <e p="MqttClientSession.cs" t="Include" />
+          <e p="MqttSession.cs" t="Include" />
+        </e>
+        <e p="Utility" t="Include">
+          <e p="QueueExtension.cs" t="Include" />
+          <e p="Trace.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+      </e>
+      <e p="M2Mqtt.sln" t="IncludeFlat" />
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

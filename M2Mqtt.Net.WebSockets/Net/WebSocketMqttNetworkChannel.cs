@@ -153,15 +153,14 @@ namespace uPLibrary.Networking.M2Mqtt
             // Use this at your own risk if your ssl connections are too strict
             if (_allowUntrusted)
             {
-                _webSocket.AllowUnstrustedCertificate = true;
                 _webSocket.Security.AllowNameMismatchCertificate = true;
             }
 
-            _webSocket.Opened += new EventHandler(OnOpened);
-            _webSocket.DataReceived += new EventHandler<DataReceivedEventArgs>(OnDataReceived);
-            _webSocket.MessageReceived += new EventHandler<MessageReceivedEventArgs>(OnMessageReceived);
-            _webSocket.Error += new EventHandler<SuperSocket.ClientEngine.ErrorEventArgs>(OnError);
-            _webSocket.Closed += new EventHandler(OnClosed);
+            _webSocket.Opened += OnOpened;
+            _webSocket.DataReceived += OnDataReceived;
+            _webSocket.MessageReceived += OnMessageReceived;
+            _webSocket.Error += OnError;
+            _webSocket.Closed += OnClosed;
 
             _webSocket.Open();
 

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/.Rider2018.1/system/resharper-host/local/Transient/ReSharperHost/v12/SolutionCaches/_M2Mqtt.Net.-1450730002.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="M2Mqtt" t="IncludeRecursive">
+        <e p="Exceptions" t="Include">
+          <e p="MqttClientException.cs" t="Include" />
+          <e p="MqttCommunicationException.cs" t="Include" />
+          <e p="MqttConnectionException.cs" t="Include" />
+          <e p="MqttTimeoutException.cs" t="Include" />
+        </e>
+        <e p="IMqttNetworkChannel.cs" t="Include" />
+        <e p="Internal" t="Include">
+          <e p="InternalEvent.cs" t="Include" />
+          <e p="MsgInternalEvent.cs" t="Include" />
+          <e p="MsgPublishedInternalEvent.cs" t="Include" />
+        </e>
+        <e p="M2Mqtt.Net.csproj" t="IncludeRecursive" />
+        <e p="Messages" t="Include">
+          <e p="MqttMsgBase.cs" t="Include" />
+          <e p="MqttMsgConnack.cs" t="Include" />
+          <e p="MqttMsgConnect.cs" t="Include" />
+          <e p="MqttMsgConnectEventArgs.cs" t="Include" />
+          <e p="MqttMsgContext.cs" t="Include" />
+          <e p="MqttMsgDisconnect.cs" t="Include" />
+          <e p="MqttMsgPingReq.cs" t="Include" />
+          <e p="MqttMsgPingResp.cs" t="Include" />
+          <e p="MqttMsgPuback.cs" t="Include" />
+          <e p="MqttMsgPubcomp.cs" t="Include" />
+          <e p="MqttMsgPublish.cs" t="Include" />
+          <e p="MqttMsgPublishEventArgs.cs" t="Include" />
+          <e p="MqttMsgPublishedEventArgs.cs" t="Include" />
+          <e p="MqttMsgPubrec.cs" t="Include" />
+          <e p="MqttMsgPubrel.cs" t="Include" />
+          <e p="MqttMsgSuback.cs" t="Include" />
+          <e p="MqttMsgSubscribe.cs" t="Include" />
+          <e p="MqttMsgSubscribeEventArgs.cs" t="Include" />
+          <e p="MqttMsgSubscribedEventArgs.cs" t="Include" />
+          <e p="MqttMsgUnsuback.cs" t="Include" />
+          <e p="MqttMsgUnsubscribe.cs" t="Include" />
+          <e p="MqttMsgUnsubscribeEventArgs.cs" t="Include" />
+          <e p="MqttMsgUnsubscribedEventArgs.cs" t="Include" />
+        </e>
+        <e p="MqttClient.cs" t="Include" />
+        <e p="MqttSecurity.cs" t="Include" />
+        <e p="MqttSettings.cs" t="Include" />
+        <e p="Net" t="Include">
+          <e p="Fx.cs" t="Include" />
+          <e p="MqttNetworkChannel.cs" t="Include" />
+        </e>
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Session" t="Include">
+          <e p="MqttBrokerSession.cs" t="Include" />
+          <e p="MqttClientSession.cs" t="Include" />
+          <e p="MqttSession.cs" t="Include" />
+        </e>
+        <e p="Utility" t="Include">
+          <e p="QueueExtension.cs" t="Include" />
+          <e p="Trace.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+      </e>
+      <e p="M2Mqtt.Net.WebSockets" t="IncludeRecursive">
+        <e p="M2Mqtt.Net.WebSockets.csproj" t="IncludeRecursive" />
+        <e p="Net" t="Include">
+          <e p="WebSocketMqttNetworkChannel.cs" t="Include" />
+        </e>
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+      </e>
+      <e p="M2Mqtt.Net.sln" t="IncludeFlat" />
+      <e p="WebSocket4Net/WebSocket4Net" t="IncludeRecursive">
+        <e p="Bin" t="ExcludeRecursive" />
+        <e p="ClosedEventArgs.cs" t="Include" />
+        <e p="Command" t="Include">
+          <e p="BadRequest.cs" t="Include" />
+          <e p="Binary.cs" t="Include" />
+          <e p="Close.cs" t="Include" />
+          <e p="Handshake.cs" t="Include" />
+          <e p="Ping.cs" t="Include" />
+          <e p="Pong.cs" t="Include" />
+          <e p="Text.cs" t="Include" />
+          <e p="WebSocketCommandBase.cs" t="Include" />
+        </e>
+        <e p="Common" t="Include">
+          <e p="ArraySegmentEx.cs" t="Include" />
+          <e p="ArraySegmentList.cs" t="Include" />
+          <e p="BinaryCommandInfo.cs" t="Include" />
+          <e p="CommandInfo.cs" t="Include" />
+          <e p="DelegateCommand.cs" t="Include" />
+          <e p="IClientCommandReader.cs" t="Include" />
+          <e p="ICommand.cs" t="Include" />
+          <e p="ICommandInfo.cs" t="Include" />
+          <e p="StringCommandInfo.cs" t="Include" />
+        </e>
+        <e p="DataReceivedEventArgs.cs" t="Include" />
+        <e p="Extensions.cs" t="Include" />
+        <e p="GlobalAssemblyInfo.cs" t="Include" />
+        <e p="IJsonExecutor.cs" t="Include" />
+        <e p="JsonExecutor.cs" t="Include" />
+        <e p="JsonWebSocket.DataContractJson.cs" t="Include" />
+        <e p="JsonWebSocket.Net.cs" t="Include" />
+        <e p="JsonWebSocket.cs" t="Include" />
+        <e p="MessageReceivedEventArgs.cs" t="Include" />
+        <e p="OpCode.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Protocol" t="Include">
+          <e p="CloseStatusCodeHybi10.cs" t="Include" />
+          <e p="CloseStatusCodeRfc6455.cs" t="Include" />
+          <e p="DraftHybi00DataReader.cs" t="Include" />
+          <e p="DraftHybi00HandshakeReader.cs" t="Include" />
+          <e p="DraftHybi00Processor.cs" t="Include" />
+          <e p="DraftHybi10DataReader.cs" t="Include" />
+          <e p="DraftHybi10HandshakeReader.cs" t="Include" />
+          <e p="DraftHybi10Processor.cs" t="Include" />
+          <e p="FramePartReader" t="Include">
+            <e p="DataFramePartReader.cs" t="Include" />
+            <e p="ExtendedLenghtReader.cs" t="Include" />
+            <e p="FixPartReader.cs" t="Include" />
+            <e p="IDataFramePartReader.cs" t="Include" />
+            <e p="MaskKeyReader.cs" t="Include" />
+            <e p="PayloadDataReader.cs" t="Include" />
+          </e>
+          <e p="HandshakeReader.cs" t="Include" />
+          <e p="ICloseStatusCode.cs" t="Include" />
+          <e p="IProtocolProcessor.cs" t="Include" />
+          <e p="ProtocolProcessorBase.cs" t="Include" />
+          <e p="ProtocolProcessorFactory.cs" t="Include" />
+          <e p="ReaderBase.cs" t="Include" />
+          <e p="Rfc6455Processor.cs" t="Include" />
+          <e p="WebSocketDataFrame.cs" t="Include" />
+        </e>
+        <e p="WebSocket.Net.cs" t="Include" />
+        <e p="WebSocket.NoSilverlight.cs" t="Include" />
+        <e p="WebSocket.cs" t="Include" />
+        <e p="WebSocket4Net.Net45.csproj" t="IncludeRecursive" />
+        <e p="WebSocketCommandInfo.cs" t="Include" />
+        <e p="WebSocketContext.cs" t="Include" />
+        <e p="WebSocketState.cs" t="Include" />
+        <e p="WebSocketVersion.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+      </e>
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
